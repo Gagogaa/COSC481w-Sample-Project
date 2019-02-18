@@ -27,7 +27,7 @@ public class SampleProject {
   }
 
   private static boolean isEligible(LocalDate dateOfBirth) {
-    return LocalDate.now().compareTo(dateOfBirth.plusYears(14).plusMonths(9)) > 0;
+    return LocalDate.now().compareTo(getEligibleDate) > 0;
   }
 
   private static void output(boolean isEligible, LocalDate dateEligible){
